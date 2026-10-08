@@ -1,0 +1,153 @@
+{
+  "rows": 7043,
+  "columns": 21,
+  "missing_total_charges": 11,
+  "churners": 1869,
+  "threshold": 0.13,
+  "validation_f2": 0.737137916126243,
+  "splits": [
+    {
+      "Split": "Training",
+      "Customers": 4225,
+      "Churners": 1121,
+      "Churn rate": 0.26532544378698225
+    },
+    {
+      "Split": "Validation",
+      "Customers": 1409,
+      "Churners": 374,
+      "Churn rate": 0.2654364797728886
+    },
+    {
+      "Split": "Test",
+      "Customers": 1409,
+      "Churners": 374,
+      "Churn rate": 0.2654364797728886
+    }
+  ],
+  "metrics": [
+    {
+      "Model": "Always stay",
+      "Threshold": NaN,
+      "Accuracy": 0.7345635202271115,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "F2": 0.0,
+      "ROC AUC": 0.5,
+      "Average precision": 0.2654364797728886,
+      "Brier": 0.19497996730765563,
+      "TN": 1035,
+      "FP": 0,
+      "FN": 374,
+      "TP": 0
+    },
+    {
+      "Model": "Logistic / default",
+      "Threshold": 0.5,
+      "Accuracy": 0.8026969481902059,
+      "Precision": 0.6518987341772152,
+      "Recall": 0.5508021390374331,
+      "F1": 0.5971014492753624,
+      "F2": 0.5684326710816777,
+      "ROC AUC": 0.843036503138805,
+      "Average precision": 0.6347718605633402,
+      "Brier": 0.13764328742087487,
+      "TN": 925,
+      "FP": 110,
+      "FN": 168,
+      "TP": 206
+    },
+    {
+      "Model": "Logistic / retention",
+      "Threshold": 0.13,
+      "Accuracy": 0.6564939673527325,
+      "Precision": 0.43159203980099503,
+      "Recall": 0.9278074866310161,
+      "F1": 0.5891341256366723,
+      "F2": 0.7543478260869565,
+      "ROC AUC": 0.843036503138805,
+      "Average precision": 0.6347718605633402,
+      "Brier": 0.13764328742087487,
+      "TN": 578,
+      "FP": 457,
+      "FN": 27,
+      "TP": 347
+    }
+  ],
+  "examples": [
+    {
+      "customerID": "4376-KFVRS",
+      "Churn probability": 0.039849163142060655,
+      "Prediction": "Likely to stay",
+      "Actual churn": "No"
+    },
+    {
+      "customerID": "2754-SDJRD",
+      "Churn probability": 0.7020072544437977,
+      "Prediction": "Likely to churn",
+      "Actual churn": "No"
+    },
+    {
+      "customerID": "9917-KWRBE",
+      "Churn probability": 0.06067434337235603,
+      "Prediction": "Likely to stay",
+      "Actual churn": "No"
+    },
+    {
+      "customerID": "0365-GXEZS",
+      "Churn probability": 0.37983642297462694,
+      "Prediction": "Likely to churn",
+      "Actual churn": "No"
+    },
+    {
+      "customerID": "9385-NXKDA",
+      "Churn probability": 0.01810019446539306,
+      "Prediction": "Likely to stay",
+      "Actual churn": "No"
+    },
+    {
+      "customerID": "4686-UXDML",
+      "Churn probability": 0.6158341020116871,
+      "Prediction": "Likely to churn",
+      "Actual churn": "No"
+    },
+    {
+      "customerID": "2227-JRSJX",
+      "Churn probability": 0.45145175615326444,
+      "Prediction": "Likely to churn",
+      "Actual churn": "No"
+    },
+    {
+      "customerID": "4830-FAXFM",
+      "Churn probability": 0.12255398555015169,
+      "Prediction": "Likely to stay",
+      "Actual churn": "No"
+    },
+    {
+      "customerID": "1830-IPXVJ",
+      "Churn probability": 0.0022755840726493854,
+      "Prediction": "Likely to stay",
+      "Actual churn": "No"
+    },
+    {
+      "customerID": "4690-LLKUA",
+      "Churn probability": 0.3696547246873535,
+      "Prediction": "Likely to churn",
+      "Actual churn": "Yes"
+    }
+  ],
+  "coefficients": {
+    "category__Contract_Two year": -1.4910855605942046,
+    "numeric__tenure": -1.3068938549204967,
+    "category__InternetService_Fiber optic": 1.0381862650010825,
+    "category__Contract_One year": -0.7267158179304679,
+    "numeric__TotalCharges": 0.5831772407741719,
+    "category__PhoneService_Yes": -0.5137778061140514,
+    "category__OnlineSecurity_Yes": -0.3716558012290213,
+    "category__MultipleLines_Yes": 0.3691986883450768,
+    "category__StreamingTV_Yes": 0.35815402424372017,
+    "category__PaymentMethod_Electronic check": 0.3559994060983196
+  },
+  "sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a"
+}
